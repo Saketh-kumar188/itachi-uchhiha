@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./portfoilo.css"/>
+    <style>
+    
+</style>
+</head>
+<body>
+    <div><h1>ITACHI</h1></div>
+    <div>
+        <ul class="details">
+            <li class="details1"><button class="btn">Home</button></li>
+            <li class="details1">Features</li>
+            <li class="details1">About</li>
+            <li class="details1">Contact</li>
+        
+           
+          </ul>
+    </div>
+    <div>
+       <div ><img class="itachi" src="./itachi.jpg" alt="itachi"/></div>
+    </div>
+    <audio id="audio">
+        <source src="./amaterasu_itachi_uch.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="playPause" class="play-button">▶</button>
+
+    <script>
+        const audio = document.getElementById("audio");
+        const playPauseButton = document.getElementById("playPause");
+
+        playPauseButton.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = "⏸"; // Change to pause icon
+            } else {
+                audio.pause();
+                playPauseButton.textContent = "▶"; // Change to play icon
+            }
+        });
+    </script>
+    
+    <div>
+        <h2>IM <span class="GENJUTSU">ITACHI</span> GOD OF GENJUTSU</h2>
+    </div>
+    <div class="social icons">
+        
+           <div class="facebook"> <a href="https://www.facebook.com/animecapsule/" ><img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="facebook"/></a></div>
+        
+
+           <div class="facebook">  <a href="https://www.instagram.com/naruto/?hl=en"><img src="https://static.vecteezy.com/system/resources/previews/014/414/683/non_2x/instagram-black-logo-on-transparent-background-free-vector.jpg" alt="instagram"> </a> </div>
+        
+            <div class="facebook"> <img src="https://i.pinimg.com/736x/5c/a9/8c/5ca98c73b2bb7a02bf8350933c7ca443.jpg" alt="twitter"> </div>
+ 
+                <div class="facebook"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linked in"></div>
+        
+
+    </div>
+    
+
+</body>
+</html>
